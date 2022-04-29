@@ -21,6 +21,7 @@ public class Inventory {
 
         public String getProductLabel() {
             return browser.getText(PRODUCT_LABEL);
+            
         }
 
 

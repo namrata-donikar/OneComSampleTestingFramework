@@ -74,4 +74,43 @@
             <class name = "com.one.LoginTest"/>
         </classes>
     </test>
+    <test name = "LoginSmokeTestWrongUsername">
+        <parameter name="username" value="standarduser"/>
+        <parameter name="password" value="secret-sauce"/>
+        <parameter name="message" value="Username and password do not match any user in this service"/>
+        <groups>
+            <run>
+                <include name = "invalid" />
+            </run>
+        </groups>
+        <classes>
+            <class name = "com.one.LoginTest"/>
+        </classes>
+    </test>
+    <test name = "LoginSmokeTestEmptyUsernameAndPassword">
+        <parameter name="username" value=""/>
+        <parameter name="password" value=""/>
+        <parameter name="message" value="Username and password do not match any user in this service"/>
+        <groups>
+            <run>
+                <include name = "invalid" />
+            </run>
+        </groups>
+        <classes>
+            <class name = "com.one.LoginTest"/>
+        </classes>
+    </test>
+    <test name = "LoginSmokeTestWrongUsernameAndPassword">
+        <parameter name="username" value="user"/>
+        <parameter name="password" value="user"/>
+        <parameter name="message" value="Username and password do not match any user in this service"/>
+        <groups>
+            <run>
+                <include name = "invalid" />
+            </run>
+        </groups>
+        <classes>
+            <class name = "com.one.LoginTest"/>
+        </classes>
+    </test>
 </suite>

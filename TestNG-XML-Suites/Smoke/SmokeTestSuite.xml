@@ -5,7 +5,7 @@
     <test name="functionality-test">
         <classes>
             <class name="com.one.MainPageTest" />
-            <!--class name="com.one.AddToCardTest" /-->
+            <class name="com.one.AddToCartTest" />
             <!--class name="com.one.NavigationTest" /-->
         </classes>
     </test>
